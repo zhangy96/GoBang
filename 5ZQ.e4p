@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-4.6.dtd">
+<!-- eric4 project file for project 5ZQ -->
+<!-- Saved: 2014-05-22, 20:54:48 -->
+<!-- Copyright (C) 2014 ,  -->
+<Project version="4.6">
+  <Language>en</Language>
+  <ProgLanguage mixed="0">Python</ProgLanguage>
+  <ProjectType>Qt4</ProjectType>
+  <Description></Description>
+  <Version>0.1</Version>
+  <Author></Author>
+  <Email></Email>
+  <Sources>
+    <Source>src/client/login_window.py</Source>
+    <Source>src/client/play_window.py</Source>
+    <Source>src/client/room_window.py</Source>
+    <Source>src/client/table_widget.py</Source>
+    <Source>src/client/__init__.py</Source>
+    <Source>src/client.py</Source>
+    <Source>src/server/server.py</Source>
+    <Source>src/server/__init__.py</Source>
+    <Source>src/__init__.py</Source>
+    <Source>__init__.py</Source>
+    <Source>src/client/ui/Ui_login.py</Source>
+    <Source>src/client/ui/Ui_play.py</Source>
+    <Source>src/client/ui/Ui_room.py</Source>
+    <Source>src/client/ui/Ui_table_widget.py</Source>
+    <Source>src/client/ui/__init__.py</Source>
+    <Source>img/img_rc.py</Source>
+  </Sources>
+  <Forms>
+    <Form>src/client/ui/login.ui</Form>
+    <Form>src/client/ui/play.ui</Form>
+    <Form>src/client/ui/room.ui</Form>
+    <Form>src/client/ui/table_widget.ui</Form>
+  </Forms>
+  <Translations>
+  </Translations>
+  <Resources>
+    <Resource>img/img.qrc</Resource>
+  </Resources>
+  <Interfaces>
+  </Interfaces>
+  <Others>
+  </Others>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.ui" type="FORMS" />
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES" />
+    <FiletypeAssociation pattern="*.ui.h" type="FORMS" />
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.py" type="SOURCES" />
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES" />
+  </FiletypeAssociations>
+</Project>

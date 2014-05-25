@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>play_window</class>
+ <widget class="QDialog" name="play_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1021</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="margin">
+    <number>5</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="min_btn">
+       <property name="minimumSize">
+        <size>
+         <width>27</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#min_btn{
+border-image: url(:/img/min.png);
+background-color: transparent;
+}
+QPushButton#min_btn::hover{
+background-image: url(:/img/min_hover.png);
+background-color: transparent;
+}
+
+QPushButton#min_btn::pressed{
+background-image: url(:/img/min_pressed.png);
+background-color: transparent;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="close_btn">
+       <property name="minimumSize">
+        <size>
+         <width>27</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border-image: url(:/img/close.png);
+background-color: transparent;
+}
+QPushButton::hover{
+background-image: url(:/img/close_hover.png);
+background-color: transparent;
+}
+
+QPushButton::pressed{
+background-image: url(:/img/close_pressed.png);
+background-color: transparent;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="board" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>739</width>
+         <height>735</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>739</width>
+         <height>735</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+background-image: url(:/img/2063.bmp);
+}
+</string>
+       </property>
+       <widget class="QWidget" name="player_top" native="true">
+        <property name="geometry">
+         <rect>
+          <x>4</x>
+          <y>101</y>
+          <width>191</width>
+          <height>262</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>191</width>
+          <height>262</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/img/2083.bmp);</string>
+        </property>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>190</y>
+           <width>32</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="player_bottom" native="true">
+        <property name="geometry">
+         <rect>
+          <x>4</x>
+          <y>377</y>
+          <width>191</width>
+          <height>262</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>191</width>
+          <height>262</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/img/2124.bmp);</string>
+        </property>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>32</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>676</y>
+          <width>56</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:transparent;
+border-image:url(:/img/2072.bmp) 0 112 0 0;
+}
+QPushButton:hover{
+background-color:transparent;
+border-image:url(:/img/2072.bmp) 0 56 0 56;
+}
+QPushButton:pressed{
+background-color:transparent;
+border-image:url(:/img/2072.bmp) 0 0 0 112;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>670</y>
+          <width>46</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:transparent;
+border-image:url(:/img/2070.bmp) 0 92 0 0;
+}
+QPushButton:hover{
+background-color:transparent;
+border-image:url(:/img/2070.bmp) 0 46 0 46;
+}
+QPushButton:pressed{
+background-color:transparent;
+border-image:url(:/img/2070.bmp) 0 0 0 92;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>212</x>
+          <y>657</y>
+          <width>43</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:transparent;
+border-image:url(:/img/2068.bmp) 0 86 0 0;
+}
+QPushButton:hover{
+background-color:transparent;
+border-image:url(:/img/2068.bmp) 0 43 0 43;
+}
+QPushButton:pressed{
+background-color:transparent;
+border-image:url(:/img/2068.bmp) 0 0 0 86;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_2" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QTextBrowser" name="textBrowser"/>
+        </item>
+        <item>
+         <widget class="QTextBrowser" name="textBrowser_2"/>
+        </item>
+        <item>
+         <widget class="QTextBrowser" name="textBrowser_3"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../img/img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
